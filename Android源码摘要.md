@@ -1,7 +1,7 @@
 Android源码摘要
 ===
-## 摘取阅读Android源码中的所得，一开始可能会很基础；
-**1 realloc和读取CPU名
+### 摘取阅读Android源码中的所得，一开始可能会很基础；
+#### 1 realloc和读取CPU名
 ```
 void get_hardware_name(char *hardware, unsigned int *revision)
 {
@@ -72,7 +72,7 @@ done:
 }
 ```
 
-## 2 list.h
+#### 2 list.h
 ```
 /*
  * Copyright (C) 2008-2013 The Android Open Source Project
@@ -163,7 +163,7 @@ static inline void list_remove(struct listnode *item)
 
 #endif
 ```
-## 3 等待文件生成
+#### 3 等待文件生成
 ```
 int wait_for_file(const char *filename, int timeout)
 {
@@ -177,7 +177,7 @@ int wait_for_file(const char *filename, int timeout)
     return ret;
 }
 ```
-## 4 修改进程名
+#### 4 修改进程名
 ```
 #define PROCESS_NAME_DEVICE "/sys/qemu_trace/process_name"
 void set_process_name(const char* new_name) {
